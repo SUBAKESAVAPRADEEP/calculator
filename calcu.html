@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="calcu.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <input type="text" class="form-control" id="result" disabled>
+      <div class="keypad">
+        <button onclick="clearResult()" class="btn btn-secondary">C</button>
+        <button onclick="appendValue(7)" class="btn btn-primary">7</button>
+        <button onclick="appendValue(8)" class="btn btn-primary">8</button>
+        <button onclick="appendValue(9)" class="btn btn-primary">9</button>
+        <button onclick="appendOperator('+')" class="btn btn-info">+</button>
+        <button onclick="appendValue(4)" class="btn btn-primary">4</button>
+        <button onclick="appendValue(5)" class="btn btn-primary">5</button>
+        <button onclick="appendValue(6)" class="btn btn-primary">6</button>
+        <button onclick="appendOperator('-')" class="btn btn-info">-</button>
+        <button onclick="appendValue(1)" class="btn btn-primary">1</button>
+        <button onclick="appendValue(2)" class="btn btn-primary">2</button>
+        <button onclick="appendValue(3)" class="btn btn-primary">3</button>
+        <button onclick="appendOperator('')" class="btn btn-info"></button>
+        <button onclick="appendValue(0)" class="btn btn-primary">0</button>
+        <button onclick="appendOperator('/')" class="btn btn-info">/</button>
+        <button onclick="calculate()" class="btn btn-success">=</button>
+        <button onclick="printValue()" class="btn btn-warning">Print</button>
+      </div>
+    </div>
+</div>
+
+<script src="calcu.js"  src="https://docs.google.com/document/d/1VyZJG0KZAoZEs3h_lpP65XPekNqsbFp8bouOZSWsOTc/edit"></script>
+</body>
+</html>
